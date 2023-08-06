@@ -1,0 +1,121 @@
+// Modal
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid $form-border-color;
+  transition: 0.5s all;
+  font-size: 12px;
+  line-height: calc(17 / 12);
+  color: $dark-text-color;
+  border-radius: 10px;
+  background: rgba(248, 210, 78, 0.1);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $tablet) {
+    width: 368px;
+    padding: 11px 16px;
+    font-size: 14px;
+    line-height: calc(20 / 14);
+  }
+
+  &:focus {
+    outline: 0;
+    border: 1px solid $accent-color;
+  }
+
+}
+
+textarea {
+  resize: none;
+  height: 65px;
+
+  @media screen and (min-width: $tablet) {
+    height: 84px;
+  }
+
+}
+
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+  }
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 21;
+
+  width: 280px;
+  height: 95%;
+
+  background-color: $light-text-color;
+  border-radius: 10px;
+  border: 2px solid $accent-color;
+
+  padding: 28px;
+
+	overflow: auto;
+
+  @media screen and (min-width: $tablet) {
+    width: 568px;
+    height: auto;
+    padding: 32px 54px;
+  }
+
+  &__title {
+    font-family: $title-font;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    color: $dark-text-color;
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 20px;
+      line-height: calc(28 / 20);
+
+      margin-bottom: 32px;
+    }
+
+  }
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding-left: auto;
+  padding-right: auto;
+  gap: 12px;
+  margin-bottom: 26px;
+
+  @media screen and (min-width: $tablet) {
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+}

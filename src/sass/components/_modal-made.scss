@@ -1,0 +1,41 @@
+// Modal made
+
+.modal-made {
+  height: auto;
+
+  @media screen and (min-width: $tablet) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  &__video {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 32px;
+    }
+
+    iframe {
+      border-radius: 10px;
+      width: 224px;
+      height: 199px;
+
+      @media screen and (min-width: $tablet) {
+        width: 448px;
+        height: 205px;
+      }
+
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: calc(20 / 14);
+    text-align: left;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: calc(22 / 16);
+    }
+  }
+}

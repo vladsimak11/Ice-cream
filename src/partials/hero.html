@@ -1,0 +1,136 @@
+<!-- Hero -->
+
+<section class="hero">
+  <div class="container hero--container">
+
+    <!-- Title -->
+
+    <h1 class="hero__title">
+      ice cream <br>
+      made with <br>
+      passion
+    </h1>
+
+    <!-- Links -->
+    
+    <ul class="hero__btns">
+      <li>
+        <a class="button button--first" href="./index.html#products">Products</a>
+      </li>
+      <li>
+        <a class="button button--transparent" href="">How it&rsquo;s made?</a
+        >
+      </li>
+    </ul>
+
+    <!-- about -->
+    <div class="hero__about">
+      <p>
+        Ice cream is a frozen dairy dessert obtained by freezing the ice cream mix with continuous agitation.
+      </p>
+      <button type="button" class="hero__about-btn">
+        <svg class="hero__icon" width="40" height="16">
+          <use href="./images/icons.svg#icon-arrow-long"></use>
+        </svg>
+      </button>
+    </div>
+
+    <ul class="hero__numbers">
+      <li><span class="hero__number">16</span> cafes</li>
+      <li><span class="hero__number">23</span> food trucks</li>
+    </ul>
+
+    <!-- Icecream-cone -->
+
+    <picture>
+      <!-- desktop -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/hero/icecream-cone_desktop@1x.png 1x,
+          ./images/hero/icecream-cone_desktop@2x.png 2x
+        "
+      />
+
+      <!-- tablet -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero/icecream-cone_tablet@1x.png 1x,
+          ./images/hero/icecream-cone_tablet@2x.png 2x
+        "
+      />
+
+      <!-- phone -->
+      <source
+        media="(max-width: 767.99px)"
+        srcset="
+          ./images/hero/icecream-cone_mobile@1x.png 1x,
+          ./images/hero/icecream-cone_mobile@2x.png 2x
+        "
+      />
+    
+      <img
+        class="hero__pic-cone"
+        src=" ./images/hero/icecream-cone_tablet@1x.png"
+        alt="Icecream cone"
+        loading="lazy"
+      />
+    </picture>
+
+    <!-- icecream plate -->
+    <picture>
+      <!-- desktop -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/hero/plate_desktop@1x.png 1x,
+          ./images/hero/plate_desktop@2x.png 2x
+        "
+      />
+
+      <!-- tablet -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero/plate_tablet@1x.png 1x,
+          ./images/hero/plate_tablet@2x.png 2x
+        "
+      />
+
+      <img
+        class="hero__pic-plate"
+        src=" ./images/hero/plate_tablet@1x.png"
+        alt="Icecream plate"
+        loading="lazy"
+      />
+    </picture>
+
+    <!-- Dots -->
+    <picture>
+      <!-- deskop -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="./images/hero/hero-dots_desktop.svg"
+      />
+
+      <!-- tablet -->
+      <source
+        media="(min-width: 768px)"
+        srcset="./images/hero/hero-dots_tablet.svg"
+      />
+
+      <!-- phone -->
+      <source
+        media="(max-width: 767.99px)"
+        srcset="./images/hero/hero-dots_mobile.svg"
+      />
+      <img
+        class="hero__pic-dots"
+        src="./images/hero/hero-dots_tablet.svg"
+        alt="Background dots"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+</section>

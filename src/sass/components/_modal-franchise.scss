@@ -1,0 +1,19 @@
+// Modla franchise
+.franchise--modal {
+  @media screen and (min-width: $tablet) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.franchise-text {
+  font-size: 14px;
+  line-height: calc(20 / 14);
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: calc(22 / 16);
+    margin-bottom: 32px;
+  }
+}
