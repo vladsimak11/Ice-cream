@@ -10,6 +10,12 @@
 
   padding-top: 12px;
 
+  
+  &--transparency {
+    background-color: rgba(132, 161, 120, 0.7);
+    backdrop-filter: blur(3px);
+  }
+
   @media screen and (min-width: $tablet) {
     padding-top: 20px;
     height: 86px;
